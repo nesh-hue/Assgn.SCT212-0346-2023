@@ -2,14 +2,20 @@
 
 int main(void)
 {
-    float a =0;
-
-    while (a <=200 )
-
+    int a,b,c;
     {
-        printf("%6.2f distance mi.=%6.2f distance km\n",
-               a,(a)*1.609344);
-        a=a+10;
+        printf("Enter the first value:");
+        scanf("%d",&a);
+        printf("Enter the end value:");
+        scanf("%d",&b);
+        printf("Enter the increment value:");
+        scanf("%d",&c);
+        while(a<=100)
+        {
+            printf("%4d degrees F=%4d degrees C\n",
+                   a,(a-32)*5/9);
+                   a=a+c;
+        }
     }
     return 0;
 }
